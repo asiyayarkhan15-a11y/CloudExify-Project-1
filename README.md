@@ -1,43 +1,89 @@
-# Personal Portfolio Website — CloudExify Web Dev Month 1, Project 1
+# CloudExify — Project 1: Personal Portfolio Website
 
-A frontend static portfolio built with **HTML5, CSS3, and vanilla JavaScript** — no
-frameworks, no build step. Deploys to Vercel with zero configuration.
+A responsive personal portfolio built with **HTML5, CSS3, and vanilla JavaScript** —
+no frameworks, no build step. Deployed live on Vercel.
+
+---
 
 ## Submission details
 
 | Field | Value |
 |-------|-------|
 | **Name** | Asiya Khan |
-| **Registration number** | `CX-2026-XXXX` _(replace with yours)_ |
-| **Build track** | Dark developer aesthetic (navy gradient, purple + amber accents) |
+| **Registration number** | FA22-BCS-022 |
+| **University** | COMSATS University Islamabad — Attock Campus |
+| **Internship** | CloudExify — Web Development, Month 1 |
+| **Project** | Project 1 — Personal Portfolio Website |
+| **Build track** | Dark developer aesthetic (navy gradient, glass surfaces, purple + amber accents) |
 | **Signature features** | Live theme switcher · Scroll-triggered skill bars · Live project filter · Hidden easter egg (Konami code) |
-| **Live Vercel link** | `https://cloudexify-web-p1-asiya.vercel.app` _(replace after deploy)_ |
+| **Live link** | https://cloudexify-project-1.vercel.app _(replace with your actual Vercel link)_ |
+| **Repository** | https://github.com/asiyayarkhan15-a11y/CloudExify-Project-1 |
 
-## Features implemented
+---
 
-- **Live theme switcher** — dark by default (matching the design), toggles to light, saved via `localStorage`.
-- **Scroll motion** — sections, cards, and tech tiles fade + slide in on scroll (staggered), with a right-rail section counter (00–04) that tracks your position, parallax decorative shapes, and a condensing navbar.
-- Responsive hamburger navbar (mobile-first, animated icon, closes on link tap).
-- Contact form with client-side validation (real backend arrives in Month 2).
-- Reduced-motion support for accessibility.
+## About the project
 
-## Projects featured (3)
+A single-page, fully responsive developer portfolio with five sections — Home, About,
+Skills, Work, and Contact. It uses a design-token system for theming, smooth
+scroll-driven animations, and showcases three real applications with clickable
+screenshot galleries.
 
-1. Study Planner Application — React Native (Expo), Node.js, MongoDB (Full-Stack) — [code](https://github.com/asiyayarkhan15-a11y/study-planner-v3)
-2. Purrfect Care — Pet Care App — React Native (Expo), TypeScript, Firebase (Mobile) — [code](https://github.com/asiyayarkhan15-a11y/purrfect-care)
-3. QuickBite — Food Delivery App — React Native (Expo), Firebase, REST APIs (Mobile) — [code](https://github.com/asiyayarkhan15-a11y/Quickbite)
+### Tech stack
+- **HTML5** (semantic structure)
+- **CSS3** (custom properties, Flexbox & Grid, mobile-first responsive design)
+- **Vanilla JavaScript** (ES6+)
+- **GSAP + ScrollTrigger** and **Lenis** (smooth scrolling & scroll animations, via CDN)
+- **Google Fonts** (Source Sans 3, Source Code Pro) and **Devicon** for tech icons
+
+### Signature features
+1. **Live theme switcher** — dark by default, toggles to a light theme, saved with `localStorage`.
+2. **Scroll-triggered skill bars** — progress bars animate `0 → value` when scrolled into view (they replay on every visit).
+3. **Live project filter** — filter the work grid by category (All / Full-Stack / Mobile).
+4. **Hidden easter egg** — the Konami code (↑ ↑ ↓ ↓ ← → ← → B A) reveals an "achievement unlocked" badge.
+
+### Other highlights
+- Buttery **smooth scrolling** (Lenis) with **scrubbed reveal, stagger, parallax, and image-zoom** animations (GSAP).
+- **Right-rail section counter** (00–04) with scroll-spy, a **scroll-progress bar**, and a **"Scroll Down / Back to Top"** control.
+- Responsive **hamburger navbar**, a **floating back-to-top** button, a **clickable screenshot lightbox**, and a validated **contact form**.
+- Full **reduced-motion support** for accessibility.
+
+---
+
+## Featured projects
+
+| Project | Type | Tech | Code |
+|---------|------|------|------|
+| **Study Planner** | Full-stack mobile | React Native (Expo), Node.js, MongoDB | [repo](https://github.com/asiyayarkhan15-a11y/study-planner-v3) |
+| **Purrfect Care** | Mobile app | React Native (Expo), TypeScript, Firebase | [repo](https://github.com/asiyayarkhan15-a11y/purrfect-care) |
+| **QuickBite** | Mobile app | React Native (Expo), Firebase, REST APIs | [repo](https://github.com/asiyayarkhan15-a11y/Quickbite) |
+
+---
+
+## Screenshots
+
+### Desktop
+![Home / hero](screenshots/desktop-home.png)
+![Projects](screenshots/desktop-projects.png)
+![Skills](screenshots/desktop-skills.png)
+
+### Mobile
+![Mobile home](screenshots/mobile-home.png)
+
+_(Full-page captures: [`screenshots/desktop-full.png`](screenshots/desktop-full.png) · [`screenshots/mobile-full.png`](screenshots/mobile-full.png))_
+
+---
 
 ## Project structure
 
 ```
-portfolio/
+CloudExify-Project-1/
 ├── index.html
 ├── css/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── assets/
-│   └── resume.pdf
+├── assets/            (resume, project screenshots, hero illustration)
+├── screenshots/       (portfolio screenshots for this report)
 └── README.md
 ```
 
@@ -49,18 +95,9 @@ Open `index.html` in a browser, or use a static server:
 npx serve .
 ```
 
-## Deploy to Vercel
+## Deploy (Vercel)
 
-1. Push this folder to a GitHub repo named `cloudexify-web-p1-asiya`.
-2. On [vercel.com](https://vercel.com) → **Add New Project** → import the repo.
+1. Push this repo to GitHub (public, named `CloudExify-Project-1`).
+2. On [vercel.com](https://vercel.com) → sign in with GitHub → **Add New → Project** → import this repo.
 3. Framework preset: **Other** (static site, no build command).
-4. **Deploy** → copy the `*.vercel.app` link into the table above.
-
-Every future `git push` auto-redeploys.
-
-## TODO before submitting
-
-- [ ] Add real **Live** and **Code** links to each project (currently `#`).
-- [ ] Update GitHub / LinkedIn links in the footer.
-- [ ] Add 2 screenshots (desktop + mobile) to the repo.
-- [ ] Fill in your registration number and live Vercel link above.
+4. **Deploy**, then paste the `*.vercel.app` link into the table above.
