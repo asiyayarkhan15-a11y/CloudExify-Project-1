@@ -66,15 +66,21 @@ screenshot galleries.
 
 ### Desktop
 
-![Home / hero](screenshots/desktop-home.png)
-![Projects](screenshots/desktop-projects.png)
-![Skills](screenshots/desktop-skills.png)
+![Home / hero](assets/screenshots/desktop-home.png)
+![Skills](assets/screenshots/desktop-skills.png)
+![Contact](assets/screenshots/contact.png)
+
+### Projects
+
+![Study Planner](assets/screenshots/project-study-planner.png)
+![Purrfect Care](assets/screenshots/project-purrfect-care.png)
+![QuickBite](assets/screenshots/project-quickbite.png)
 
 ### Mobile
 
-![Mobile home](screenshots/mobile-home.png)
+_Mobile screenshots added separately._
 
-_(Full-page captures: [`screenshots/desktop-full.png`](screenshots/desktop-full.png) · [`screenshots/mobile-full.png`](screenshots/mobile-full.png))_
+_(Full-page desktop capture: [`assets/screenshots/desktop-full.png`](assets/screenshots/desktop-full.png))_
 
 ---
 
@@ -87,8 +93,11 @@ CloudExify-Project-1/
 │   └── style.css
 ├── js/
 │   └── script.js
-├── assets/            (resume, project screenshots, hero illustration)
-├── screenshots/       (portfolio screenshots for this report)
+├── assets/
+│   ├── screenshots/   (portfolio screenshots for this report)
+│   ├── study-planner/ purrfect-care/ quickbite/  (project screenshots)
+│   ├── hero-illustration.png
+│   └── resume.pdf
 └── README.md
 ```
 
