@@ -16,7 +16,7 @@ no frameworks, no build step. Deployed live on Vercel.
 | **Project**             | Project 1 — Personal Portfolio Website                                                                    |
 | **Build track**         | Glass & Gradient — frosted-glass surfaces, navy gradients, blur effects, purple + amber neon accents      |
 | **Signature features**  | Live theme switcher · Scroll-triggered skill bars · Live project filter · Hidden easter egg (Konami code) |
-| **Live link**           | https://cloud-exify-project-1-eight.vercel.app/                                                           |
+| **Live link**           | https://asiyayarkhan.vercel.app/                                                                          |
 | **Repository**          | https://github.com/asiyayarkhan15-a11y/CloudExify-Project-1                                               |
 
 ---
