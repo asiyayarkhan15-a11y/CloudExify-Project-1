@@ -78,7 +78,11 @@ screenshot galleries.
 
 ### Mobile
 
-_Mobile screenshots added separately._
+![Home / hero (mobile)](assets/screenshots/mobile-home.png)
+![About (mobile)](assets/screenshots/mobile-about.png)
+![Skills (mobile)](assets/screenshots/mobile-skills.png)
+![Work (mobile)](assets/screenshots/mobile-work.png)
+![Contact (mobile)](assets/screenshots/mobile-contact.png)
 
 _(Full-page desktop capture: [`assets/screenshots/desktop-full.png`](assets/screenshots/desktop-full.png))_
 
