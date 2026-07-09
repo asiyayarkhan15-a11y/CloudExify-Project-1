@@ -233,8 +233,11 @@ if (skillEls.length) {
    6. MOTION — GSAP + Lenis, with vanilla fallback
    ========================================================= */
 const hasGSAP = window.gsap && window.ScrollTrigger && window.Lenis;
+// Smooth-scroll (Lenis) + GSAP scrub only on wider screens; on phones use the
+// reliable native-scroll fallback so touch scrolling and reveals behave properly.
+const useSmooth = window.matchMedia('(min-width: 820px)').matches;
 
-if (hasGSAP && !prefersReduced) {
+if (hasGSAP && !prefersReduced && useSmooth) {
   try { initGSAP(); }
   catch (err) { console.warn('GSAP init failed, using fallback:', err); initFallback(); }
 } else {
