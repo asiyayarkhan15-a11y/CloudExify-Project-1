@@ -169,15 +169,16 @@ filterBtns.forEach(btn => {
 });
 
 /* ---------- 7. Signature Feature: scroll-triggered skill bars ----------
-   Fill to the target width when visible, reset when out of view so the
-   animation replays every time you scroll back to Skills. */
+   Fill to the target width the first time the row scrolls into view,
+   then stop observing so it animates once (not on every pass). */
 const skillEls = document.querySelectorAll('.skill-bars .skill');
 if (skillEls.length) {
   const barObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
       const fill = entry.target.querySelector('.fill');
-      if (!fill) return;
-      fill.style.width = entry.isIntersecting ? (entry.target.dataset.percent + '%') : '0%';
+      if (fill) fill.style.width = entry.target.dataset.percent + '%';
+      barObserver.unobserve(entry.target);
     });
   }, { threshold: 0.35 });
   skillEls.forEach(el => barObserver.observe(el));

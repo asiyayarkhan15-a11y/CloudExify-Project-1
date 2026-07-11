@@ -39,7 +39,7 @@ screenshot galleries.
 ### Signature features
 
 1. **Live theme switcher** — dark by default, toggles to a light theme, saved with `localStorage`.
-2. **Scroll-triggered skill bars** — progress bars animate `0 → value` when scrolled into view (they replay on every visit).
+2. **Scroll-triggered skill bars** — progress bars animate `0 → value` the first time they scroll into view.
 3. **Live project filter** — filter the work grid by category (All / Full-Stack / Mobile).
 4. **Hidden easter egg** — the Konami code (↑ ↑ ↓ ↓ ← → ← → B A) reveals an "achievement unlocked" badge.
 
