@@ -444,7 +444,8 @@ ul { list-style: none; }
 .mock-ml  { background: linear-gradient(135deg, rgba(244,169,73,0.22), rgba(16,31,56,0.6)); }
 
 /* ---------- Contact (04) ---------- */
-.contact-grid { display: grid; grid-template-columns: 1fr; gap: 44px; align-items: center; width: 100%; }
+/* Columns start on the same line (top-aligned) so the copy and the form stay parallel */
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 44px; align-items: start; width: 100%; }
 .contact-copy { position: relative; }
 /* Contact heading sized down so "Let's work together" stays on one line */
 .contact .big-title { font-size: clamp(1.9rem, 4vw, 2.9rem); }
