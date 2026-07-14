@@ -452,7 +452,7 @@ ul { list-style: none; }
 .contact-globe { position: absolute; left: -60px; top: -40px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, rgba(52,120,220,0.5), rgba(10,21,38,0.1) 62%); filter: blur(6px); z-index: -1; opacity: 0.8; }
 .contact-lede { color: var(--muted); font-size: 1.25rem; margin: 16px 0 24px; max-width: 460px; }
 /* Direct contact methods (email / phone / GitHub) */
-.contact-list { display: grid; gap: 12px; margin-top: 24px; max-width: 460px; }
+.contact-list { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; max-width: 460px; }
 .contact-list li {
   display: flex; align-items: center; gap: 14px;
   padding: 12px 16px;
@@ -566,7 +566,12 @@ html.lenis, html.lenis body { height: auto; }
   .project { grid-template-columns: 1fr 1fr; gap: 44px; }
   .project.is-reverse .project-info { order: 2; }
   .project.is-reverse .project-visual { order: 1; }
-  .contact-grid { grid-template-columns: 1fr 1fr; gap: 56px; }
+  .contact-grid { grid-template-columns: 1fr 1fr; gap: 56px; align-items: stretch; }
+  /* Both columns share one height: the copy stretches and its cards grow to
+     fill, so the left block and the form box start AND end on the same line. */
+  .contact-copy { display: flex; flex-direction: column; }
+  .contact-list { flex: 1; }
+  .contact-list li { flex: 1; }
 }
 
 @media (prefers-reduced-motion: reduce) {
