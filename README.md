@@ -112,10 +112,3 @@ Open `index.html` in a browser, or use a static server:
 ```bash
 npx serve .
 ```
-
-## Deploy (Vercel)
-
-1. Push this repo to GitHub (public, named `CloudExify-Project-1`).
-2. On [vercel.com](https://vercel.com) → sign in with GitHub → **Add New → Project** → import this repo.
-3. Framework preset: **Other** (static site, no build command).
-4. **Deploy**, then paste the `*.vercel.app` link into the table above.
