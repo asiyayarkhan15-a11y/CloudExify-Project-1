@@ -446,6 +446,8 @@ ul { list-style: none; }
 /* ---------- Contact (04) ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr; gap: 44px; align-items: center; width: 100%; }
 .contact-copy { position: relative; }
+/* Contact heading sized down so "Let's work together" stays on one line */
+.contact .big-title { font-size: clamp(1.9rem, 4vw, 2.9rem); }
 .contact-globe { position: absolute; left: -60px; top: -40px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, rgba(52,120,220,0.5), rgba(10,21,38,0.1) 62%); filter: blur(6px); z-index: -1; opacity: 0.8; }
 .contact-lede { color: var(--muted); font-size: 1.25rem; margin: 16px 0 24px; max-width: 460px; }
 /* Direct contact methods (email / phone / GitHub) */
