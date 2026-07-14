@@ -66,25 +66,25 @@ screenshot galleries.
 
 ### Desktop
 
-![Home / hero](assets/screenshots/desktop-home.png)
-![Skills](assets/screenshots/desktop-skills.png)
-![Contact](assets/screenshots/contact.png)
+![Home / hero](screenshots/desktop-home.png)
+![Skills](screenshots/desktop-skills.png)
+![Contact](screenshots/contact.png)
 
 ### Projects
 
-![Study Planner](assets/screenshots/project-study-planner.png)
-![Purrfect Care](assets/screenshots/project-purrfect-care.png)
-![QuickBite](assets/screenshots/project-quickbite.png)
+![Study Planner](screenshots/project-study-planner.png)
+![Purrfect Care](screenshots/project-purrfect-care.png)
+![QuickBite](screenshots/project-quickbite.png)
 
 ### Mobile
 
-![Home / hero (mobile)](assets/screenshots/mobile-home.png)
-![About (mobile)](assets/screenshots/mobile-about.png)
-![Skills (mobile)](assets/screenshots/mobile-skills.png)
-![Work (mobile)](assets/screenshots/mobile-work.png)
-![Contact (mobile)](assets/screenshots/mobile-contact.png)
+![Home / hero (mobile)](screenshots/mobile-home.png)
+![About (mobile)](screenshots/mobile-about.png)
+![Skills (mobile)](screenshots/mobile-skills.png)
+![Work (mobile)](screenshots/mobile-work.png)
+![Contact (mobile)](screenshots/mobile-contact.png)
 
-_(Full-page desktop capture: [`assets/screenshots/desktop-full.png`](assets/screenshots/desktop-full.png))_
+_(Full-page desktop capture: [`screenshots/desktop-full.png`](screenshots/desktop-full.png))_
 
 ---
 
@@ -97,8 +97,8 @@ CloudExify-Project-1/
 │   └── style.css
 ├── js/
 │   └── script.js
+├── screenshots/       (portfolio screenshots for this report)
 ├── assets/
-│   ├── screenshots/   (portfolio screenshots for this report)
 │   ├── study-planner/ purrfect-care/ quickbite/  (project screenshots)
 │   ├── hero-illustration.png
 │   └── resume.pdf
